@@ -66,11 +66,10 @@ module.exports = {
           'sibling',
           'index'
         ],
-        'newlines-between':
-          'always-and-inside-groups' /* ,
+        'newlines-between': 'always-and-inside-groups',
         alphabetize: {
           order: 'asc'
-        } */
+        }
       }
     ],
     'no-await-in-loop': 0,
