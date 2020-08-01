@@ -1,0 +1,6 @@
+{
+  "extends": "./ts/base.json",
+  "exclude": [
+    "node_modules"
+  ]
+}
