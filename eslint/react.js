@@ -3,12 +3,13 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ['./base.js', 'react-app', 'airbnb/hooks', 'prettier/react'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
+  extends: [
+    './base.js',
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'prettier/react',
+    './_shared.js'
+  ],
   plugins: ['react'],
   rules: {
     'jsx-a11y/label-has-associated-control': 0,
@@ -16,16 +17,6 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'react/jsx-props-no-spreading': 0,
     'react/prop-types': 0,
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        mjs: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never'
-      }
-    ]
+    'react/no-unused-prop-types': 0
   }
 };
