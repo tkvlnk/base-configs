@@ -6,6 +6,8 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-member-accessibility': 0,
     '@typescript-eslint/no-empty-function': 0,
+    '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/no-explicit-any': 2,
     '@typescript-eslint/no-namespace': [
       2,
       {
@@ -18,6 +20,7 @@ module.exports = {
         functions: false
       }
     ],
+    '@typescript-eslint/no-unnecessary-type-assertion': 0,
     '@typescript-eslint/no-unused-vars': [
       2,
       {

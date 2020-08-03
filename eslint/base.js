@@ -1,13 +1,11 @@
 module.exports = {
   extends: [
     'airbnb-base',
-    'plugin:prettier/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:import/errors',
-    'plugin:import/warnings',
+    'plugin:import/recommended',
     'plugin:import/typescript',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     './_shared.js'
   ],
   parser: '@typescript-eslint/parser',
@@ -17,11 +15,23 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.spec.{ts,tsx}'],
+      files: ['*.{spec,test}.{ts,tsx}', '__tests__/**/*.{ts,tsx}'],
       env: {
         jest: true
-      }
+      },
+      extends: ['plugin:jest/recommended']
     }
   ],
-  plugins: ['@typescript-eslint', 'import', 'prettier']
+  plugins: ['@typescript-eslint', 'import', 'prettier'],
+  rules: {
+    'import/extensions': [
+      2,
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'never',
+        ts: 'never'
+      }
+    ]
+  }
 };
