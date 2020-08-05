@@ -1,11 +1,14 @@
 {
-  "name": "@tkvlnk/configs",
+  "name": "tkvlnk-configs",
   "version": "1.1.2",
   "description": "Shared eslint, prettier, stylelint configurations",
   "scripts": {},
   "author": {
     "name": "Tit Kovalenko",
     "email": "t.a.kvlnk@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/tkvlnk/configs"
   },
   "license": "ISC",
   "dependencies": {
