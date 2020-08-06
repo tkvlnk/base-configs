@@ -8,6 +8,19 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/no-empty-interface': 0,
     '@typescript-eslint/no-explicit-any': 2,
+    '@typescript-eslint/no-floating-promises': [
+      2,
+      {
+        ignoreVoid: true,
+        ignoreIIFE: true
+      }
+    ],
+    '@typescript-eslint/no-misused-promises': [
+      2,
+      {
+        checksVoidReturn: false
+      }
+    ],
     '@typescript-eslint/no-namespace': [
       2,
       {
