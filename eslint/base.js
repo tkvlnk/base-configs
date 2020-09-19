@@ -1,11 +1,11 @@
 module.exports = {
   extends: [
     'airbnb-base',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'eslint-plugin-import/config/recommended',
+    'eslint-plugin-import/config/typescript',
+    '@typescript-eslint/eslint-plugin/dist/configs/eslint-recommended',
+    '@typescript-eslint/eslint-plugin/dist/configs/recommended',
+    '@typescript-eslint/eslint-plugin/dist/configs/recommended-requiring-type-checking',
     './_shared.js'
   ].map(require.resolve),
   parser: '@typescript-eslint/parser',

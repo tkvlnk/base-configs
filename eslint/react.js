@@ -5,9 +5,9 @@ module.exports = {
   },
   extends: [
     './base.js',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'prettier/react',
+    'eslint-config-airbnb-typescript',
+    'eslint-config-airbnb/hooks',
+    'eslint-config-prettier/react',
     './_shared.js'
   ].map(require.resolve),
   plugins: ['react'],
