@@ -9,7 +9,7 @@ module.exports = {
     'airbnb/hooks',
     'prettier/react',
     './_shared.js'
-  ],
+  ].map(require.resolve),
   plugins: ['react'],
   rules: {
     'jsx-a11y/label-has-associated-control': 0,

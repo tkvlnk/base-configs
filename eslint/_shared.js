@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['prettier', 'prettier/@typescript-eslint'],
+  extends: ['prettier', 'prettier/@typescript-eslint'].map(require.resolve),
   plugins: ['prettier'],
   rules: {
     '@typescript-eslint/ban-ts-ignore': 0,

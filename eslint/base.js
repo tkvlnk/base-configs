@@ -7,7 +7,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     './_shared.js'
-  ],
+  ].map(require.resolve),
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
