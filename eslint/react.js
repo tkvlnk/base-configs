@@ -5,11 +5,11 @@ module.exports = {
   },
   extends: [
     './base.js',
-    'eslint-config-airbnb-typescript',
-    'eslint-config-airbnb/hooks',
-    'eslint-config-prettier/react',
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'prettier/react',
     './_shared.js'
-  ].map(require.resolve),
+  ],
   plugins: ['react'],
   rules: {
     'jsx-a11y/label-has-associated-control': 0,
