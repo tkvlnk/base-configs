@@ -1,4 +1,4 @@
-const { jsRules } = require('./_rules');
+const { jsRules, tsRules } = require('./_rules');
 
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
@@ -20,6 +20,7 @@ module.exports = {
       ],
       plugins: ['react'],
       rules: {
+        ...tsRules,
         'jsx-a11y/label-has-associated-control': 0,
         'react/jsx-filename-extension': [
           'error',
