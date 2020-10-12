@@ -39,6 +39,8 @@ const tsRules = {
       ignoreRestSiblings: true
     }
   ],
+  '@typescript-eslint/no-shadow': 2,
+  'no-shadow': 0,
   'no-undef': 0
 };
 
