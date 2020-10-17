@@ -1,9 +1,9 @@
-const { jsRules } = require('./_rules');
+const { jsRules, tsRules } = require('./_rules');
 
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: ['prettier'],
-  rules: { ...jsRules },
+  rules: { ...jsRules, ...tsRules },
   overrides: [
     {
       files: ['**/*.ts'],
