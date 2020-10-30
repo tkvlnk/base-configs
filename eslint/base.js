@@ -3,7 +3,7 @@ const { jsRules, tsRules } = require('./_rules');
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: ['prettier'],
-  rules: { ...jsRules, ...tsRules },
+  rules: { ...jsRules },
   overrides: [
     {
       files: ['**/*.ts'],
@@ -31,6 +31,8 @@ module.exports = {
       ],
       plugins: ['@typescript-eslint', 'import', 'prettier'],
       rules: {
+        ...jsRules,
+        ...tsRules,
         'import/extensions': [
           2,
           'ignorePackages',
