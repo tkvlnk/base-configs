@@ -82,6 +82,7 @@ const jsRules = {
     'WithStatement'
   ],
   'no-underscore-dangle': 0,
+  'no-use-before-define': 0,
   'no-useless-constructor': 0,
   'no-param-reassign': [
     2,
