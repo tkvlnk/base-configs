@@ -1,3 +1,5 @@
+const prettierConfig = require('../prettier/base');
+
 const tsRules = {
   '@typescript-eslint/ban-ts-ignore': 0,
   '@typescript-eslint/explicit-function-return-type': 0,
@@ -91,7 +93,7 @@ const jsRules = {
     }
   ],
   'prefer-destructuring': 0,
-  'prettier/prettier': 1,
+  'prettier/prettier': [1, prettierConfig],
   'sort-imports': [
     2,
     {

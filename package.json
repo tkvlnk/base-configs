@@ -1,5 +1,5 @@
 {
-  "name": "tkvlnk-configs",
+  "name": "@tkvlnk/configs",
   "version": "2.1.5",
   "description": "Shared eslint, prettier, stylelint configurations",
   "scripts": {},
