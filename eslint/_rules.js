@@ -92,6 +92,12 @@ const jsRules = {
       props: false
     }
   ],
+  'no-void': [
+    2,
+    {
+      allowAsStatement: true
+    }
+  ],
   'prefer-destructuring': 0,
   'prettier/prettier': [1, prettierConfig],
   'sort-imports': [
