@@ -59,6 +59,7 @@ const jsRules = {
   ],
   'import/newline-after-import': 2,
   'import/no-anonymous-default-export': 2,
+  'import/no-default-export': 1,
   'import/no-extraneous-dependencies': 0,
   'import/order': [
     2,
@@ -70,6 +71,7 @@ const jsRules = {
       }
     }
   ],
+  'import/prefer-default-export': 0,
   'no-await-in-loop': 0,
   'no-continue': 0,
   'no-debugger': 1,
