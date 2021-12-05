@@ -15,7 +15,6 @@ module.exports = {
         './base.js',
         'airbnb-typescript',
         'airbnb/hooks',
-        'prettier/react',
         './_shared.js'
       ],
       plugins: ['react'],
