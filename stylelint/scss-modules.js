@@ -16,11 +16,12 @@ module.exports = {
     'declaration-empty-line-before': null,
     'declaration-colon-newline-after': null,
     'prettier/prettier': true,
-    'value-keyword-case': null,
+    'selector-class-pattern': '^_?[a-z][A-z]+$',
     'order/properties-order': propertiesGroups.map((group) => ({
       ...group,
       emptyLineBefore: 'always',
       noEmtyLineBetween: true
-    }))
+    })),
+    'value-keyword-case': null
   }
 };
