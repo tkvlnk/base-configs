@@ -47,5 +47,10 @@
     "prettier": "^2",
     "stylelint": "^14",
     "typescript": "^4"
+  },
+  "peerDependenciesMeta": {
+    "stylelint": {
+      "optional": true
+    }
   }
 }
