@@ -16,7 +16,7 @@ module.exports = {
     'declaration-empty-line-before': null,
     'declaration-colon-newline-after': null,
     'prettier/prettier': true,
-    'selector-class-pattern': '^_?[a-z][A-z]+$',
+    'selector-class-pattern': '^(_[a-z]|[A-Z])[A-z]+$',
     'order/properties-order': propertiesGroups.map((group) => ({
       ...group,
       emptyLineBefore: 'always',
